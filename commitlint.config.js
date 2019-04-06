@@ -1,7 +1,11 @@
 module.exports = {
   extends: ['@commitlint/config-angular'],
   rules: {
-    'scope-enum': [2, 'always', ['pics', 'seasons', 'monorepo']],
+    'scope-enum': [
+      2,
+      'always',
+      ['pics', 'seasons', 'monorepo', 'youtube-explorer'],
+    ],
     'subject-case': [2, 'always', 'lowerCase'],
   },
 };
