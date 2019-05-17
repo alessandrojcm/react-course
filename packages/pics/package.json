@@ -11,7 +11,7 @@
     "axios": "^0.18.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8",
+    "react-scripts": "3.0.1",
     "refract-rxjs": "^4.2.0",
     "rxjs": "^6.4.0",
     "typescript": "3.3.3333"
