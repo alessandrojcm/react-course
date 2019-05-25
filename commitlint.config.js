@@ -4,7 +4,15 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['pics', 'seasons', 'monorepo', 'youtube-explorer', 'songs', 'posts'],
+      [
+        'pics',
+        'seasons',
+        'monorepo',
+        'youtube-explorer',
+        'songs',
+        'posts',
+        'streamy',
+      ],
     ],
     'subject-case': [2, 'always', 'lowerCase'],
   },
