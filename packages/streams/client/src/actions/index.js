@@ -1,3 +1,4 @@
+import history from '../history';
 import streams from '../common/apis/streams';
 import {
   CREATE_STREAM,
@@ -26,13 +27,15 @@ export const setLoading = (loading) => ({
   payload: loading,
 });
 
-export const createStream = (formData) => async (dispatch) => {
-  const response = await streams.post('/streams', formData);
+export const createStream = (formData) => async (dispatch, getState) => {
+  const { userId } = getState().auth;
+  const response = await streams.post('/streams', { ...formData, userId });
 
   dispatch({
     type: CREATE_STREAM,
     payload: response.data,
   });
+  history.push('/');
 };
 
 export const fetchStreams = () => async (dispatch) => {
@@ -71,4 +74,5 @@ export const editStream = (streamData) => async (dispatch) => {
     type: EDIT_STREAM,
     payload: response.data,
   });
+  history.push('/');
 };
