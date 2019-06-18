@@ -44,8 +44,8 @@ const StreamList = ({
     <div className={'ui list'}>
       <RenderLoading loading={loading} />
       {streams.map((stream) => (
-        <>
-          <div className={'item'} key={stream.id}>
+        <React.Fragment key={stream.id}>
+          <div className={'item'}>
             <i className={'large middle aligned icon camera'} />
             <div className={'content'}>
               {renderAdminButtons(stream)}
@@ -53,7 +53,7 @@ const StreamList = ({
               <div className={'description'}>{stream.description}</div>
             </div>
           </div>
-        </>
+        </React.Fragment>
       ))}
       {renderCreate()}
     </div>
