@@ -5,7 +5,8 @@
     "lerna": "^3.13.1"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/streams/*"
   ],
   "engines": {
     "node": ">=10.15.1"
