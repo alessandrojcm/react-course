@@ -49,7 +49,9 @@ const StreamList = ({
             <i className={'large middle aligned icon camera'} />
             <div className={'content'}>
               {renderAdminButtons(stream)}
-              {stream.title}
+              <Link to={`streams/${stream.id}`} className={'header'}>
+                {stream.title}
+              </Link>
               <div className={'description'}>{stream.description}</div>
             </div>
           </div>
