@@ -12,6 +12,7 @@ module.exports = {
         'songs',
         'posts',
         'streamy',
+        'translate',
       ],
     ],
     'subject-case': [2, 'always', 'lowerCase'],
