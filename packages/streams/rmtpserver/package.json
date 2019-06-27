@@ -1,0 +1,15 @@
+{
+  "name": "rmtpserver",
+  "version": "1.0.0",
+  "description": "RMPT server for streamy",
+  "main": "index.js",
+  "author": "Alessandro Cuppari <alessandrojcuppari@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "node-media-server": "^2.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
