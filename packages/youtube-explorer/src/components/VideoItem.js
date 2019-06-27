@@ -1,14 +1,7 @@
-import React, { Dispatch, SetStateAction } from 'react';
-import { YoutubeVideo } from '../models/youtube-video';
+import React from 'react';
 import './video-item.css';
 
-const VideoItem = ({
-  item,
-  setSelected,
-}: {
-  item: YoutubeVideo;
-  setSelected: Dispatch<SetStateAction<YoutubeVideo | undefined>>;
-}) => {
+const VideoItem = ({ item, setSelected }) => {
   return (
     <article
       className="video-item item"

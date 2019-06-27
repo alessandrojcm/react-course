@@ -1,14 +1,8 @@
-import React, { Dispatch, SetStateAction } from 'react';
-import { YoutubeVideo } from '../models/youtube-video';
+import React from 'react';
+
 import VideoItem from './VideoItem';
 
-const VideoList = ({
-  videos,
-  setSelected,
-}: {
-  videos: YoutubeVideo[];
-  setSelected: Dispatch<SetStateAction<YoutubeVideo | undefined>>;
-}) => {
+const VideoList = ({ videos, setSelected }) => {
   return (
     <section className="ui relaxed divided list">
       {videos.map((item) => (

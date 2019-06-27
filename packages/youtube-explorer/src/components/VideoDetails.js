@@ -1,7 +1,6 @@
 import React from 'react';
-import { YoutubeVideo } from '../models/youtube-video';
 
-const VideoDetail = ({ item }: { item: YoutubeVideo }) => {
+const VideoDetail = ({ item }) => {
   if (!item) {
     return <section className="ui loader" />;
   }
