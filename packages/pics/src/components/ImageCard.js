@@ -1,15 +1,15 @@
-import React, { useRef, useState } from "react";
-import { UnsplashImage } from "../models/unplash-image.model";
+import React, { useRef, useState } from 'react';
 
-const ImageCard = ({ image }: { image: UnsplashImage }) => {
-  const imageRef = useRef<HTMLImageElement>(null);
+const ImageCard = ({ image }) => {
+  const imageRef = useRef(null);
   const [spans, setSpans] = useState(0);
+  console.log(image);
 
   return (
     <div style={{ gridRowEnd: `span ${spans}` }}>
       <img
         ref={imageRef}
-        src={image.urls.regular}
+        src={image.url}
         key={image.id}
         alt={image.description}
         onLoad={() =>
