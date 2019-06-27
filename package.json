@@ -5,10 +5,11 @@
     "lerna": "^3.13.1"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/streams/*"
   ],
   "engines": {
-    "node": "=10.15.1"
+    "node": ">=10.15.1"
   },
   "scripts": {
     "format:all": "prettier --config .prettierrc --write \"./**/*{.ts,.js}\"",

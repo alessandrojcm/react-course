@@ -1,0 +1,15 @@
+{
+  "name": "streams-server",
+  "version": "0.0.0",
+  "description": "Streams project api",
+  "author": "Alessandro Cuppari <alessandrojcuppari@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "json-server -p 3001 -w db.json",
+    "postinstall": "node writeDbJson.js"
+  },
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}
