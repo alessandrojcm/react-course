@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "node-media-server": "^2.1.0"
+    "node-media-server": "^2.1.6"
   },
   "scripts": {
     "start": "node index.js"
